@@ -19,6 +19,8 @@ body {
 }
 
 
+
+
 /* Typeography General*/
 h1 {
     font-family: 'Fira Sans', sans-serif;
@@ -39,7 +41,28 @@ h2 {
     font-size: 3em;
     color: #fff;
 }
-
+.item:hover{
+    cursor: pointer;
+    background-color: rgb(0, 89, 255);
+    color:#fff;
+}
+.hide{
+    /*leave it now */
+}
+#navbar__list{
+    font: 24px bold;
+    color: #000;
+    background-color: rgb(49, 34, 139);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    
+}
+#navbar__list li{
+    margin-right: 15px;
+}   
 p {
     line-height: 1.6em;
     color: #eee;
@@ -90,11 +113,12 @@ section {
 
 /* Header Styles */
 .page__header {
-    background: #fff;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 5;
+    display: block;
+    transition: top 0.3s;
 }
 
 /* Footer Styles */
