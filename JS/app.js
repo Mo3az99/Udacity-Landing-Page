@@ -38,6 +38,13 @@ function toggleButtonDisplay(){
     }
 }
 
+function navbarTimeOut(){
+    setTimeout(function(){document.getElementsByClassName("navbar__menu")[0].style.visibility='visible'},0); //is this idea is good or there is a better way ?
+    if (window.scrollY >= sections[0].offsetTop ){
+    setTimeout(function(){document.getElementsByClassName("navbar__menu")[0].style.visibility='hidden'},1500);
+    }
+}
+
 
 /**
  * End Helper Functions
@@ -106,11 +113,7 @@ list.addEventListener('click', function(e) {
 // Set sections as active
 window.addEventListener('scroll', function  () {
     activeScrolling();  
-    setTimeout(function(){document.getElementsByClassName("navbar__menu")[0].style.visibility='visible'},0); //is this idea is good or there is a better way ?
-    if (window.scrollY >= sections[0].offsetTop ){
-    setTimeout(function(){document.getElementsByClassName("navbar__menu")[0].style.visibility='hidden'},1500);
-    }
-
+    navbarTimeOut();
     toggleButtonDisplay();
 });
 
