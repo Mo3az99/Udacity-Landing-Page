@@ -19,23 +19,24 @@
 */
 let sections = document.querySelectorAll('section');
 const list = document.getElementById('navbar__list');
-
+const main =document.getElementsByTagName("main");
+const mybutton = document.getElementById("myBtn");
 
 /**
  * End Global Variables
  * Start Helper Functions
  * 
 */
-function isScrolledIntoView(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
-
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+//toggle the button visibility with respect to height
+function toggleButtonDisplay(){
+    if(window.scrollY >= 1500){
+        mybutton.style.display = "block";
+    
+    }else{
+        mybutton.style.display = "none";
+    }
 }
-
 
 
 /**
@@ -83,6 +84,7 @@ function anchorClick (e) {
     }
 };
 
+
 /**
  * End Main Functions
  * Begin Events
@@ -108,6 +110,15 @@ window.addEventListener('scroll', function  () {
     if (window.scrollY >= sections[0].offsetTop ){
     setTimeout(function(){document.getElementsByClassName("navbar__menu")[0].style.visibility='hidden'},1500);
     }
+
+    toggleButtonDisplay();
 });
+
+
+//scroll top for button
+mybutton.addEventListener('click', function(e) {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  });
 
 
