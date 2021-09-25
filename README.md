@@ -34,13 +34,16 @@ a dynamice navigator created automatically for any blog with many posts which al
 # Technologies
 * HTML
 * CSS
-* JS
+* JS  
+* 
 [(Back to top)](#table-of-contents)
 
 # Author
-Moaaz Mansour
+Moaaz Mansour  
+
 [(Back to top)](#table-of-contents)
 
 # Credits
-**thank you UDACITY**
+**thanks UDACITY**  
+
 [(Back to top)](#table-of-contents)
