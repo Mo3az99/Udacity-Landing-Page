@@ -23,24 +23,24 @@ a simple landing page with an interactive navigation bar and a back to top butto
 - [Credits](#Credits)
 
 # Installation
-just instal any browser -in case you dont have one- and open the index.html file
+just instal any browser -in case you dont have one- and open the index.html file  
 [(Back to top)](#table-of-contents)
 
 
 # Usage
-a dynamice navigator created automatically for any blog with many posts which allows u to navigate easily between your posts and also you can easily back to top at any moment down there 
+a dynamice navigator created automatically for any blog with many posts which allows u to navigate easily between your posts and also you can easily back to top at any moment down there  
 [(Back to top)](#table-of-contents)
 
 # Technologies
 * HTML
 * CSS
-* JS 
+* JS  
 [(Back to top)](#table-of-contents)
 
 # Author
-Moaaz Mansour 
+Moaaz Mansour  
 [(Back to top)](#table-of-contents)
 
 # Credits
-**thanks UDACITY** 
+**thanks UDACITY**  
 [(Back to top)](#table-of-contents)
