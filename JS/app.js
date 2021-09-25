@@ -60,7 +60,7 @@ function buildNav () {
     for (const section of sections) {   /// how to use for of here please, i tried but it didnt work i needed the i counter 
         const newElement =document.createElement('li');
         newElement.className = `item ${i}`;
-        var data = section.getAttribute("data-nav");
+        let data = section.getAttribute("data-nav");
         newElement.innerText= data;
         fragment.appendChild(newElement);   
         i++;
@@ -70,7 +70,7 @@ function buildNav () {
 
 // Add class 'active' to section when near top of viewport
 function activeScrolling () {// is here an over head ?
-    sections.forEach(function(section,i){    /// how to use for of here please, i tried but it didnt work i needed the i counter 
+    sections.forEach((section,i)=>{    /// how to use for of here please, i tried but it didnt work i needed the i counter 
         if (window.scrollY >= sections[i].offsetTop ) {    //is there a better way ?
             sections[i].classList.add("active");
             if (i>0){
