@@ -37,7 +37,7 @@ function toggleButtonDisplay(){
         mybutton.style.display = "none";
     }
 }
-
+//time out for the navbar to hide
 function navbarTimeOut(){
     setTimeout(function(){document.getElementsByClassName("navbar__menu")[0].style.visibility='visible'},0); //is this idea is good or there is a better way ?
     if (window.scrollY >= sections[0].offsetTop ){
@@ -69,25 +69,26 @@ function buildNav () {
 };
 
 // Add class 'active' to section when near top of viewport
-function activeScrolling () {// is here an over head ?
-    sections.forEach((section,i)=>{    /// how to use for of here please, i tried but it didnt work i needed the i counter 
-        if (window.scrollY >= sections[i].offsetTop ) {    //is there a better way ?
-            sections[i].classList.add("active");
+function activeScrolling () {
+    sections.forEach((section,i)=>{   
+        if (window.scrollY >= sections[i].offsetTop ) {    //why your active class flicker ?
+            setTimeout( function(){sections[i].classList.add("active");},1000);
             if (i>0){
-                sections[i-1].classList.remove("active");
+                setTimeout( function(){sections[i-1].classList.remove("active");},1000);
             }
         }
         if (window.scrollY < sections[i].offsetTop) { 
-            sections[i].classList.remove("active");
+            setTimeout( function(){sections[i].classList.remove("active");},1000);
+            
         }
     });
 }; 
 
 // Scroll to anchor ID using scrollTO event
 function anchorClick (e) {
-    if (e.target && e.target.matches("li.item")) { //li and li.item both works what is the diffrence please?
+    if (e.target && e.target.matches("li.item")) { 
        console.log("clicked " + e.target.classList[1]);    
-       window.scrollTo(0,sections[e.target.classList[1]].offsetTop); // is there a better way, i feel it is a bit complicated or i dont feel it is xd
+       window.scrollTo(0,sections[e.target.classList[1]].offsetTop); 
     }
 };
 
