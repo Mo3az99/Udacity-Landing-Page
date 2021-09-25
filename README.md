@@ -17,8 +17,8 @@ a simple landing page with an interactive navigation bar and a back to top butto
 
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
-- [Project Title](#project-title)
-- [Demo-Preview](#demo-preview)
+- [Project Title](#Udacity-Landing-Page)
+- [Demo-Preview](#Demo-Preview)
 - [Table of contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
