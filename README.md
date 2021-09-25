@@ -35,7 +35,7 @@ a dynamice navigator created automatically for any blog with many posts which al
 * HTML
 * CSS
 * JS  
-* 
+
 [(Back to top)](#table-of-contents)
 
 # Author
