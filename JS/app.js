@@ -106,8 +106,8 @@ window.addEventListener('load', function () {
 
 // Scroll to section on link click
 
-//There is a default event occurring that we need to stop. How? ---- i cant understand this comment i didnt stop anything here
 list.addEventListener('click', function(e) {
+    e.preventDefault();
     anchorClick(e);
 });
 
